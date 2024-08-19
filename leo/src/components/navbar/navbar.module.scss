@@ -1,0 +1,56 @@
+@use '../../style/helpers/variables' as *;
+
+.navbar {
+    background-color: $background;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding: 10px 20px;
+    font-family: $jura;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-bottom: 5px solid $secondary;
+}
+
+.navLinks {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    li {
+        margin-left: 5px;
+        margin-top: 8px;
+        
+        a {
+            color: $secondary;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+
+            &:hover {
+                color: $primary;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.separator {
+    color: $secondary;
+    font-size: 1.2rem;
+}
+
+.logo {
+    font-size: 2rem;
+    
+    .leo {
+        color: $secondary;
+    }
+
+    .lov {
+        color: $black;
+    }
+}

@@ -1,0 +1,69 @@
+@use '../../style/helpers/variables' as *;
+
+.contentSection {
+    padding: 20px;
+    margin: 20px 0;
+    font-family: $jura;
+}
+
+.innerContainer {
+    display: flex;
+    border: 8px solid $primary;
+    overflow: hidden;
+    transition: flex-direction 0.3s ease;
+}
+
+.picture {
+    flex: 1;
+    border-right: 8px solid $primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.picture img {
+    width: 100%;
+    height: 580px;
+    object-fit: cover;
+}
+
+.textContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    color: $secondary;
+    font-size: 24px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.description {
+    color: $black;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    padding-left: 20px;
+}
+
+.additionalInfo {
+    color: $black;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 1rem;
+    padding-left: 20px;
+}
+
+.reverse {
+    flex-direction: row-reverse; 
+}
+
+.reverse .picture {
+    border-left: 8px solid $primary;
+    border-right: none;
+}
