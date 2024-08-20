@@ -1,5 +1,62 @@
 @use '../../style/helpers/variables' as *;
 
+// .navbar {
+//     background-color: $background;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: left;
+//     padding: 10px 20px;
+//     font-family: $jura;
+//     position: sticky;
+//     top: 0;
+//     z-index: 1000;
+//     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+//     border-bottom: 5px solid $secondary;
+// }
+
+// .navLinks {
+//     list-style: none;
+//     display: flex;
+//     margin: 0;
+//     padding: 0;
+
+//     li {
+//         margin-left: 5px;
+//         margin-top: 8px;
+        
+//         a {
+//             color: $secondary;
+//             text-decoration: none;
+//             font-size: 1.1rem;
+//             transition: color 0.3s;
+
+//             &:hover {
+//                 color: $primary;
+//                 text-decoration: underline;
+//             }
+//         }
+//     }
+// }
+
+// .separator {
+//     color: $secondary;
+//     font-size: 1.2rem;
+// }
+
+// .logo {
+//     font-size: 2rem;
+    
+//     .leo {
+//         color: $secondary;
+//     }
+
+//     .lov {
+//         color: $black;
+//     }
+// }
+
+
+
 .navbar {
     background-color: $background;
     display: flex;
@@ -45,12 +102,60 @@
 
 .logo {
     font-size: 2rem;
-    
+
     .leo {
         color: $secondary;
     }
 
     .lov {
         color: $black;
+    }
+}
+
+/* Hide hamburger menu by default */
+.menuIcon {
+    display: none;
+}
+
+/* Tablet and Mobile Version */
+@media (max-width: 1024px) {
+    .navLinks {
+        display: none; /* Hide the regular nav links */
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .menuIcon {
+        display: block; /* Show hamburger menu */
+        cursor: pointer;
+    }
+
+    .menuIcon div {
+        width: 25px;
+        height: 3px;
+        background-color: $secondary;
+        margin: 5px 0;
+        transition: all 0.3s ease;
+    }
+
+    .navbar.open .navLinks {
+        display: flex; /* Show nav links when menu is open */
+        position: absolute;
+        top: 60px; /* Adjust this value to ensure it aligns with your navbar height */
+        left: 0;
+        background-color: $background;
+        width: 100%;
+        padding: 10px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-bottom: 5px solid $secondary;
+    }
+
+    .navbar.open .navLinks li {
+        margin: 10px 0; /* Adjust spacing between menu items */
+    }
+
+    .navbar.open .navLinks a {
+        font-size: 1.2rem; /* Adjust font size if needed */
     }
 }
