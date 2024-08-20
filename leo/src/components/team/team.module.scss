@@ -54,3 +54,60 @@
     font-size: 1rem;
     color: $black; 
 }
+
+@media (max-width: 1024px) {
+    .heading {
+        font-size: 2.5rem;
+    }
+
+    .cardsContainer {
+        justify-content: center; 
+        gap: 1.5rem; 
+    }
+
+    .card {
+        width: 150px; 
+        height: auto; 
+        max-height: 400px; 
+        padding-bottom: 30px; 
+    }
+
+    .name {
+        font-size: 1.25rem; 
+    }
+
+    .quote {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 2rem; 
+    }
+
+    .cardsContainer {
+        flex-direction: column; 
+        align-items: center; 
+        gap: 1rem; 
+    }
+
+    .card {
+        width: 100%; 
+        max-width: 300px;
+        height: auto;
+    }
+
+    .image {
+        width: 120px; 
+        height: 120px;
+    }
+
+    .name {
+        font-size: 1.125rem;
+    }
+
+    .quote {
+        font-size: 0.875rem;
+    }
+}
