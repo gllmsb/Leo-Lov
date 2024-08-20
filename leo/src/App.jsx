@@ -9,6 +9,7 @@ import garantiImage from '../src/assets/images/garanti.png';
 import { Team } from './components/team/team';
 import { Address } from './components/address/address';
 import { Footer } from './components/footer/footer';
+import SmoothScroll from './components/smoothscroll/smoothscroll';
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
       <Team/>
       <Address/>
       <Footer/>
+      <SmoothScroll/>
     </>
   )
 }

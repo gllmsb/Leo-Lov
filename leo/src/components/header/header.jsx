@@ -4,7 +4,7 @@ import headerImage from '../../assets/images/header.png'
 export const Header = () => {
 
     return(
-        <header className={StyleSheet.header}>
+        <header id="hjem" className={StyleSheet.header}>
             <img src={headerImage} alt="Leo-Lov Header" className={styles.headerImage}/>
             <div className={styles.textContainer}>
                 <h1>

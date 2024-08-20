@@ -32,7 +32,7 @@ export const Team = () => {
     ];
 
     return(
-        <section className={styles.teamSection}>
+        <section id="advokaterne" className={styles.teamSection}>
             <h3 className={styles.heading}>MØD HOLDET</h3>
             <div className={styles.cardsContainer}>
                 {teamMembers.map((member, index) => (

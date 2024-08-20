@@ -4,7 +4,7 @@ import linkedinIcon from '../../assets/images/linkedinw.png';
 
 export const Footer = () => {
     return (
-        <section className={styles.footerSection}>
+        <section id="kontakt" className={styles.footerSection}>
             <div className={styles.footerContainer}>
                 <div className={styles.leftContainer}>
                     <div className={styles.leftContent}>

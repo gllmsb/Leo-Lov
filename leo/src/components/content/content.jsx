@@ -5,7 +5,7 @@ export const Content = (props) => {
         const containerClass = reverse ? styles.reverse : '';
 
     return (
-        <section className={styles.contentSection}>
+        <section id="om-leolov" className={styles.contentSection}>
             <div className={`${styles.innerContainer} ${containerClass}`}>
                 <div className={styles.picture}>
                     <img src={image} alt="content visual" />
