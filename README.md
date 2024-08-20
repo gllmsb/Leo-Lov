@@ -5,7 +5,7 @@ I started with installing react and sass, After that I did my file structures. I
 
 I actually did the mobile and tablet view for everything tuesday since Ive completely forgotten I was meant to do them. Continuing, i did the Header which was way more simpler than the navbar. After that I did the cards which gave me a little challenge with the styling because idk im dumb and i get confused i couldn't get the width and all four of them together in a row, however i figured it out somehow. 
 
-I then continued with the content component thus required me the most effort to do, since i couldn't comprehend how to do the reverse the 2nd one. So basically I had one component placed in two times and the 2nd (of the same component) had to be reversed. So as my teacher explained if I can remember correctly that is, I needed a prop that could reverse through true or false. So the 2nd content component had reverse={true} in order for it to be reversed. 
+I then continued with the content component thus required me the most effort to do, since i couldn't comprehend how to reverse the 2nd one. So basically I had one component placed in two times and the 2nd (of the same component) had to be reversed. So as my teacher explained if I can remember correctly that is, I needed a prop that could reverse through true or false. So the 2nd content component had reverse={true} in order for it to be reversed. 
 
 The team cards was easy enough since there wasn't really much to it, i had to play a little with the styling to get it to look exactly as it needed to be.
 
