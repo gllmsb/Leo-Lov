@@ -67,3 +67,63 @@
     border-left: 8px solid $primary;
     border-right: none;
 }
+
+@media (max-width: 1024px) {
+    .picture img {
+        height: 400px; 
+    }
+
+    .textContent {
+        padding: 10px; 
+    }
+
+    .title {
+        font-size: 25px;
+    }
+
+    .description, .additionalInfo {
+        font-size: 14px; 
+        padding-left: 10px; 
+    }
+
+    .innerContainer {
+        flex-direction: column; 
+    }
+
+    .reverse {
+        flex-direction: column-reverse; 
+    }
+
+    .reverse .picture {
+        border-left: none;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .picture img {
+        height: 300px; 
+    }
+
+    .textContent {
+        padding: 5px; 
+    }
+
+    .title {
+        font-size: 18px; 
+        margin-top: 15px;
+    }
+
+    .description, .additionalInfo {
+        font-size: 12px; 
+        padding-left: 5px; 
+    }
+
+    .innerContainer {
+        flex-direction: column; 
+    }
+
+    .reverse {
+        flex-direction: column-reverse; 
+    }
+}
